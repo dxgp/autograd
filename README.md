@@ -22,6 +22,8 @@ Try these out in Mathematica.
 How do you implement it?
 
 ### Step 1: Build computation graph
+
+#### Sidenote: Bashing Tensorflow
 First, let's bash Tensorflow a little. Tensorflow provides a mini language for building computation graphs. Now I know what you're thinking. 
 
 >Tensorflow also has function tracing.
