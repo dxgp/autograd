@@ -32,6 +32,8 @@ I know that. It's called eager execution. But here's the thing: It was added lat
 
 > P.S.: I'm a pragmatist. If a library that's better than PyTorch were to come out, I'd jump ship.
 
+#### Back on Track
+
 Autograd traces the forward computation by fooling people into thinking that they're using numpy when what they're actually doing is providing a computation graph.
 
 Suppose you put in:
