@@ -20,6 +20,7 @@ D[Log[1+Exp[w2*Log[1+Exp[w1 * x + b1]]+b2]],w1]
 Try these out in Mathematica. 
 
 How do you implement it?
+
 ###Step 1: Build computation graph
 First, let's bash Tensorflow a little. Tensorflow provides a mini language for building computation graphs. Now I know what you're thinking. 
 >Tensorflow also has function tracing.
@@ -43,5 +44,8 @@ def logistic_real(x):
 Here's the graph that's built behind the scenes:
 ![Comp Graph](/images/comp_graph.png)
 
+
 ###Step 2: Compute backward pass
+
 ###Step 3: *Get a big bag to put the money in*
+
