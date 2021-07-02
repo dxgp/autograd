@@ -7,6 +7,20 @@ As they say:
 > you'll probably never do it, but it's important for having a mental model
 > of how everything works.
 
+Autograd is based on the idea of *differentiating code*. 
+
+## Some Math
+First, let's get the math out of the way. Say we have a function $F:R^n \rightarrow R$. Also, let $F$ be given by:
+
+$$F(x) = D(C(B(A(x))))$$
+
+So, $F$ is a composition of four functions. Suppose we are given an $x$. To evaluate $F$, we first evaluate $A(x)$, then $B(A(x))$ and so on. So, it's convenient to name these intermediate values.
+
+$$a = A(x)$$
+$$b = B(a)$$
+$$c = C(b)$$
+$$d = D(c)$$
+
 ## Some Notes
 
 An autodiff system will convert the program into a sequence of simple operations that all have a predefined derivative computation method.
